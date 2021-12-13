@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+   
+    <link rel="stylesheet" href="styles(Contact).css">
+
+    <body>
+    
+
+    
+        <h3>Jorge Diaz</h3>
+    
+        <header>
+ 
+      <h2>Contact Me</h2>
+    </header>
+    
+    <section>
+
+<!-- I coded two forms, the email and phone number forms, I coded a "required" attribute as well a 
+    format for the phone form, that way you cannot sumit anything without the phone number. 
+    Of course they don't lead to anywhere other websites  -->
+      
+    <nav>
+        <p>If you would like to send me a message</p>
+        <form action="/action_page.php">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+           
+            <input type="submit" id="button" value="Submit" >
+          </form>
+
+      <p>or</p>
+
+      <form action="/action_page.php">
+        <label for="phone">Enter your phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="661-555-0107"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <small>Format: 661-555-0107</small><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+      
+
+      </nav>
+      
+      <article>
+          
+<!-- I coded the table to list 3 ways to contact me, the phone number of course is fake -->
+        <h1>Contact information:</h1>
+    
+        
+        
+        <figure>
+<figcaption>
+
+<!-- I also coded a "div style" element with overflow-x:auto so that way the table is responsive -->
+    <div style="overflow-x:auto;">
+    <table>
+        <tr>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>School email</th>
+        </tr>
+        <tr>
+          <td>jorge.diaz13695@gmail.com</td>
+          <td>661-555-0107</td>
+          <td>jdiazortiz@stu.sctech.edu
+        </td>
+        </tr>
+      </table>
+
+    </div>
+
+</figcaption>
+        </figure>    
+    </article>
+    </section>
+    
+   
+    <footer>
+      <a href = "file:///C:/Users/el_me/Desktop/for_comprass/Resume.html">Return to Resume</a></li>
+    </footer>
+    
+
+
+</body>
+</html>

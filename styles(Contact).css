@@ -1,0 +1,154 @@
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+  height: 736px;
+  border: 3px solid black;
+  
+  font-size: 100%;
+  
+  max-width: 1025px;
+  
+  width: 90%;   /*Change from 960px, so it will be easy for me to calculate*/
+      }
+      
+      /* Style the header */
+      header {
+        background-color: rgb(102, 153, 255);
+        padding: 30px;
+        padding-left: 7em;
+        text-align: left;
+        font-size: 35px;
+        color: white;
+      }
+      
+      h1 {
+          text-align: center;
+         
+      }
+      
+      h2 {text-shadow: 3px 3px 3px black;;}
+  
+      h3 {
+          float: left;
+          font-size: 20px;
+   border: 2px solid black;
+          color: black;
+          font-weight: normal;
+          padding: .5em .9em;
+          background-color: white;
+  
+      }
+      
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 440px; 
+        background: rgb(204, 221, 255);
+        padding: 20px;
+      }
+      
+      /* Style for email form */
+      input  {
+  width: 100%;
+  box-sizing: border-box;
+  
+      }
+  label {float: left;
+  width: 5em;}
+      
+  #button
+  
+  {margin-right: 7em;}
+  
+  
+  
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 350px; 
+        
+      }
+  
+  
+  
+      figure {
+  text-align: center;
+      padding: .5em .5em;
+  }
+  
+  figcaption {
+      color: #000000;
+  
+  }
+  
+  
+  /* style for the table, I change the length to make it bigger, of course I made sure to code the 
+  table to be resposive 
+  code to it, that way it will allow you to scroll through the information */
+      table {
+  border-collapse: collapse;
+  float: center;}
+  
+  table, th, td {
+    border:1px solid black;
+  text-align: left;
+  padding: 2em 4em;
+  
+  
+  }
+  
+  
+  
+  
+      
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+
+
+/* A code that if a mouse hovers a unvisited link it will turn red*/
+a:link {
+    color: rgb(25, 0, 255);
+  }
+  
+  /* If a link is already visited, then it turns pink*/
+  a:visited {
+    color: rgb(225, 0, 255);
+  }
+  
+  /* If a mouse moves over a link then it turns "hotpink"*/
+  a:hover {
+    color: hotpink;
+  }
+
+
+
+
+      
+      /* Style the footer */
+      footer {
+        background-color: rgb(102, 153, 255);
+        padding: 2em;
+        text-align: center;
+   
+      }
+     
+     
+     
+      /* Responsive layout */
+      @media (max-width: 959px) {
+          nav, article, table, body {
+            width: 100%;
+            height: auto;
+          }
+        }

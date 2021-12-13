@@ -1,0 +1,141 @@
+
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Style for body */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(0, 102, 255);
+  border: 4px solid black;
+  height: 1110px;
+font-size: 100%;
+  max-width: 1024px;
+
+width: 90%;   /*Change from 960px, so it will be easy for me to calculate*/
+
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: left;
+  font-size: 2.18em;    /* 35 / 16 */
+  color: white;
+  
+}
+
+/* styles for the links */
+
+ /* A code that if a mouse hovers a unvisited link it will turn red*/
+ a:link {
+  color: rgb(25, 0, 255);
+}
+
+/* If a link is already visited, then it turns pink*/
+a:visited {
+  color: rgb(225, 0, 255);
+}
+
+/* If a mouse moves over a link then it turns "hotpink"*/
+a:hover {
+  color: hotpink;
+}
+
+
+
+h2 {border-top: 3px solid rgb(25, 0, 255); 
+  
+  padding-top: 0.10416%;}      /* 1 / 960 x 100 */
+
+h4 {font-size: .8em;     /* 12.8 / 16 */
+  
+  text-align: left; 
+  
+  border-bottom: 3px solid rgb(25, 0, 255); 
+
+  padding-bottom: .052%;}                  /* .5 / 960 x 100 */
+
+
+p1 {color: black;
+padding-bottom: 0.2083%;             /* 2 / 960 x 100 */
+border-bottom: 1px solid gray; ;}
+
+p2 {font-weight: bold;
+
+font-size: 30px;}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;               /* 288 / 960 x 100 */
+  height: 563px; 
+  padding: 2.083%;            /* 20 / 960 x 100 */
+  border-left:  solid 3px;
+  border-right:  solid 3px;
+  border-top:  solid 3px;
+  border-color: rgb(25, 0, 255);
+
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: .5em;
+  list-style-type: square;
+
+
+}
+
+
+/* Styles for the "experience" article*/
+article {
+  float: left;
+  padding: 2.083%;                  /* 20 / 960 x 100 */
+  width: 70%;                       /* 672 / 960 x 100 */
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+
+  padding-left: 3.125%;   /* 30 / 960 x 100 */
+  text-align: left;
+color: black;
+  border-top: 6px solid rgb(25, 0, 255); 
+  padding-bottom: 1.56%;        /* 15 / 960 x 100 */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout (for tablets) */
+@media (max-width: 959px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

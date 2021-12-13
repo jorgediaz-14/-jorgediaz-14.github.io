@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+   font-family: Arial, Helvetica, sans-serif;
+
+  border: 2px solid black;
+
+  background-color: rgb(230, 240, 255);
+
+font-size: 100%;
+
+  max-width: 1025px;
+
+width: 90%;   /*Change from 960px, so it will be easy for me to calculate*/
+
+}
+
+/* Style for the header */
+header {
+  background-color: rgb(143, 152, 163);
+  padding: 10px;
+  text-align: center;
+  
+  font-size: 2.187em;                          /* 35 / 16 */   
+
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  border-top: 2px solid black
+}
+
+
+
+
+/* Style for p1 "the basic design" */
+
+p1 {font-size: 1em;                       
+text-align: center;
+
+}
+
+p2 {
+padding-left: 16px;         
+
+padding-bottom: 25px;      
+
+
+}
+
+p3 {
+  padding-bottom: 10px;
+  
+  padding-top: 10px;
+}
+
+
+
+
+h4 {
+    padding-left: 14px;    
+   
+    font-size: 25px;    
+}
+
+
+h2 {
+    padding-top: 16px;  
+}
+
+
+
+/* Style for h3 */
+h3 {
+
+width: 320px;
+text-align: center;
+padding-top: .4em;
+
+font-size: 1.31em;                   /* 21 / 16 */      
+
+padding-bottom: 1em;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 35%;
+  height: 404px; 
+  background: rgb(143, 152, 163);
+  padding: 20px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/* Style for the list inside the menu */
+nav ul {
+  padding: 0;
+  list-style: circle;
+}
+
+
+
+/* styles for the links */
+
+ /* A code that if a mouse hovers a unvisited link it will turn red*/
+ a:link {
+  color: rgb(25, 0, 255);
+}
+
+/* If a link is already visited, then it turns pink*/
+a:visited {
+  color: rgb(225, 0, 255);
+}
+
+/* If a mouse moves over a link then it turns "hotpink"*/
+a:hover {
+  color: hotpink;
+}
+
+
+/* Style for the img */
+img
+{
+border-bottom: 2px solid black;
+width: 357px;
+height: 404px;
+border-top: 2px solid black;
+max-width: 400px;
+}
+
+/* Style for the article */
+article {
+float: right;
+  padding: 20px;
+  width: 30%;
+  height: 404px; 
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  background-color: rgb(143, 152, 163);
+  border-bottom: 2px solid black;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  
+  padding: 3.125%;                /* 30 / 960 x 100 */
+
+  text-align: left;
+  color: white;
+  border-top: 2px solid black;
+}
+
+/* Responsive layout (for tablets) */
+@media (max-width: 959px) {
+  nav, article, h3, img {
+    width: 100%;
+    height: auto;
+  }
+}
